@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+a{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
