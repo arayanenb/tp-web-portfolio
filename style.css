@@ -14,6 +14,7 @@ nav {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 nav a {
   margin: 0 10px;
   text-decoration: none;
@@ -24,6 +25,11 @@ a{
     font-family: Arial, sans-serif;
     text-decoration: none;
     color: black;
+}
+
+.dark-mode {
+  background: #111;
+  color: white;
 }
 
 .card {
