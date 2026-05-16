@@ -1,55 +1,17 @@
-console.log("JavaScript fonctionne !");
+const inputname = document.getElementById("name");
+const inputemail = document.getElementById("email");
+const inputpassword = document.getElementById("password");
+const inputage = document.getElementById("age");
+const submitBtn = document.getElementById("submitBtn");
 
-const btnMessage = document.getElementById("btnMessage");
-const message = document.getElementById("message");
+console.log(inputname, inputemail, inputpassword, inputage, submitBtn);
 
-btnMessage.addEventListener("click", function () {
-  message.textContent = "Bravo, tu as cliqué sur le bouton !";
-});
-
-const inputNom = document.getElementById("nom");
-const btnNom = document.getElementById("btnNom");
-const resultatNom = document.getElementById("resultatNom");
-
-btnNom.addEventListener("click", function () {
-  resultatNom.textContent = "Bonjour " + inputNom.value;
-});
-
-const contactForm = document.getElementById("contactForm");
-const formResult = document.getElementById("formResult");
-
-contactForm.addEventListener("submit", function (event) {
+submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
-  formResult.textContent = "Message envoyé avec succès !";
+  console.log("Nom : " + inputname.value);
+  console.log("Email : " + inputemail.value);
+  console.log("Mot de passe : " + inputpassword.value);
+  console.log("Âge : " + inputage.value);
+  alert("Name: " + inputname.value + "\nEmail: " + inputemail.value + "\nMot de passe: " + inputpassword.value + "\nÂge: " + inputage.value);
 });
 
-contactForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const prenom = document.getElementById("prenom").value;
-  const email = document.getElementById("email").value;
-  const messageContact = document.getElementById("messageContact").value;
-
-  if (prenom === "" || email === "" || messageContact === "") {
-    formResult.textContent = "Veuillez remplir tous les champs.";
-  } else {
-    formResult.textContent = "Merci " + prenom + ", votre message a été envoyé.";
-  }
-});
-
-const darkModeBtn = document.getElementById("darkModeBtn");
-
-darkModeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-mode");
-});
-
-const competenceInput = document.getElementById("competenceInput");
-const addCompetence = document.getElementById("addCompetence");
-const competenceList = document.getElementById("competenceList");
-
-addCompetence.addEventListener("click", function () {
-  const li = document.createElement("li");
-  li.textContent = competenceInput.value;
-  competenceList.appendChild(li);
-  competenceInput.value = "";
-});
