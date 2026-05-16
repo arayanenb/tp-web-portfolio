@@ -8,10 +8,6 @@
 </head>
 <body>
 
-    <header>
-        <h1>je suis sur header</h1>
-    </header>
-
     <nav>
         <a href="#acceuil">Accueil</a>
         <a href="#apropos">À propos</a>
@@ -20,6 +16,16 @@
         <a href="#contact">Contact</a>
         <button id="darkModeBtn">Mode sombre</button>
     </nav>
+
+
+    
+    
+    
+    
+    <section>
+            <header>
+        <h1>je suis sur header</h1>
+    </header>
 
     <main>
         <h1>je suis sur main</h1>
@@ -33,7 +39,28 @@
     <button id="btnNom">Valider</button>
     <p id="resultatNom"></p>
     
-    <form id="contactForm">
+
+    
+    <div id="acceuil">
+        <h1>Accueil</h1>
+    </div>
+    <div id="apropos">
+        <h1>À propos</h1>
+    </div>
+    <div id="competences">
+        <h1>Compétences</h1>
+        <input type="text" id="competenceInput" placeholder="Ajouter une compétence">
+        <button id="addCompetence">Ajouter</button>
+        <ul id="competenceList"></ul>
+    </div>
+
+    <div id="projets">
+        <h1>Projets</h1>
+    </div>
+
+    <div id="contact">
+        <h1>Contact</h1>
+            <form id="contactForm">
         <input type="text" id="prenom" placeholder="Prénom">
         <input type="email" id="email" placeholder="Email">
         <textarea id="messageContact" placeholder="Message"></textarea>
@@ -41,24 +68,13 @@
     </form>
 
     <p id="formResult"></p>
-    
-    <input type="text" id="competenceInput" placeholder="Ajouter une compétence">
-    <button id="addCompetence">Ajouter</button>
-    <ul id="competenceList"></ul>
-    
-    
-    
-    
-    <section>
-        <div id="acceuil">
-            <h1>je suis sur section</h1>
-        </div>
-    </section>
+    </div>
 
     <footer>
         <h1>je suis sur footer</h1>
     </footer>
 
+    </section>
 
     <script src="script.js"></script>
 
